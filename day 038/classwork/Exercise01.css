@@ -1,0 +1,22 @@
+.w70{
+    width: 70%;
+    background-color: black;
+    height: 500px;
+}
+
+.w50{
+    width: 50%;
+    background-color: blue;
+    font-size: 40px;
+    height: 300px;
+}
+
+.w50 p{
+    font-size: 50%;
+}
+
+.kidev-erti{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+}

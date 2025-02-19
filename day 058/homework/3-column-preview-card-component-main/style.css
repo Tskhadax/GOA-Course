@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    display: grid;
+    width: 80%;
+    grid-template-rows: 450px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 330px));
+    justify-content: center;
+    align-content: center;
+}
+
+
+div {
+    padding: 30px 30px;
+}
+
+.div1 {
+    background-color: hsl(31, 77%, 52%);
+
+}
+
+.div2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.div3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 25px 0px;
+    font-family: "Big Shoulders Display", serif;
+
+}
+
+p {
+    opacity: 80%;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    padding: 10px 25px;
+    border: none;
+    color: hsl(31, 77%, 52%);
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.b2 {
+    color: hsl(179, 100%, 13%);
+}
+
+.b3 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+.b1:hover {
+    border: 2px solid white;
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    transition: 0.3s;
+}
+
+.b2:hover {
+    border: 2px solid white;
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    transition: 0.3s;
+}
+
+.b3:hover {
+    border: 2px solid white;
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* @media (max-width:745px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+} */

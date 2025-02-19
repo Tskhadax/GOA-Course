@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+
+
+#text{
+    color:hotpink;
+    background-color: beige;
+    padding:20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 6px solid hotpink;
+    font-style: oblique;
+    font-weight: 10;
+    transition: color 0.3s;
+}
+
+#text:hover{
+    color: cornflowerblue;
+}
+
+
+.heading{
+    color: cornflowerblue;
+    background-color: beige;
+    padding:20px;
+    text-align: center;
+    border-radius: 10px;
+    border:6px solid cornflowerblue;
+    font-style: oblique;
+    font-weight: 10;
+    transition: color 0.3s;
+}
+
+.heading:hover{
+    color:hotpink;
+}
+
+
+
+.t{
+    color:red
+}
+
+#color{
+    color:blue;
+}
+
+
+
+.hex{
+    color: #278
+}
+
+.rgb{
+    color: rgb(100, 0, 50)
+}

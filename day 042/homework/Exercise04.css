@@ -1,0 +1,38 @@
+/* 
+ 2) გამოიყენეთ :link რათა ყველა არასდროს დაჭერილი ლინკის ფერი იყოს ლურჯი 
+ გამოიყენეთ :visited რათა ყველა უმვე მონახულებული ლინკის ფერი იყოს იასამნისფერი  */
+
+.link{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.link a{
+    color:red;
+    font-size: 30px;
+    font-weight:10px;
+    font-family: cursive;
+}
+
+.link a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+
+.visited{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.visited a{
+    color:red;
+    font-size: 30px;
+    font-weight:10px;
+    font-family: cursive;
+    text-decoration: none;
+}
+
+.visited a:visited{
+    color: violet;
+}

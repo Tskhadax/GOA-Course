@@ -1,0 +1,61 @@
+:root{
+    --yellow: hsl(47, 88%, 63%);
+}
+*{
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--yellow);
+    flex-direction: column;
+    gap:30px
+}
+section{
+    background-color:white;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    border-radius:15px;
+    border: 1px solid black;
+    box-shadow:9px 9px 0px black
+}
+#main{
+    border-radius:10px
+}
+button{
+    margin-top:20px;
+    height:30px;
+    border-radius:5px;
+    width:80px;
+    border-style:none;
+    background-color:var(--yellow) ;
+    font-weight: 800;
+}
+h1{
+    font-weight:800;
+    margin-top:-2px;
+}
+#text{
+    margin-top:-5px;
+    line-height: 1.4;
+    opacity: 0.6;
+}
+section div{
+    display:flex;
+    align-items:center;
+    width:200px;
+}
+div img{
+    width:35px;
+}
+h2{
+    font-size:16px;
+    font-weight:800;
+    margin-left:15px
+}

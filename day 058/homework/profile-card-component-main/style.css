@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns:repeat(auto-fill,minmax(200px,270px)) ;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+    color: white;
+    font-family: "Barlow Semi Condensed", serif;
+}
+
+section div{
+    border-radius: 10px;
+
+}
+
+.first{
+    padding: 25px 25px;
+    background-color:hsl(263, 55%, 52%) ;
+    grid-column-start: span 2;
+
+}
+
+.div1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+h2{
+    font-size: 13px;
+    font-weight:500 ;
+}
+
+ h3{
+    opacity: 50%;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+img{
+    border-radius: 50%;
+    width: 30px;
+    border: solid 1px white;
+}
+
+h1{
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+p{
+    opacity: 60%;
+    line-height: 22px;
+}
+
+
+
+
+
+/* =================================== */
+.second{
+    background-color:hsl(217, 19%, 35%) ;
+    padding: 25px 25px;
+}
+
+.third{
+    background-color: hsl(0, 27%, 96%) ;
+    grid-row-start: span 2;
+    padding: 25px 25px;
+    color: black;
+}
+
+.third p {
+    line-height: 20px;
+}
+
+.fourth{
+    color: black;
+    background-color: hsl(0, 27%, 96%)  ;
+    padding: 25px 25px;
+}
+
+.fifth{
+    background-color:hsl(219, 29%, 14%) ;
+    grid-column-start: span 2;
+    padding: 25px 25px;
+}
+
+
+
+@media (max-width:1130px){
+    section{
+        grid-template-columns:repeat(2,1fr) ;
+        /* grid-template-rows: repeat(4,1fr); */
+        margin: 10px 10px;
+    }
+}
+
+
+@media (max-width:500px){
+    section{
+        margin: 10px 10px;
+        grid-template-columns: 1fr ;
+
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 0.4fr; */
+    }
+    .alldiv{
+        grid-column: 1/2;
+    }
+    .third{
+        grid-row: 3/4;
+    }
+    .fourth{
+        grid-row:span 1;
+    }
+    .first{
+        grid-row: span 2;
+    }
+} 

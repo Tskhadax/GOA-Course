@@ -1,0 +1,13 @@
+div{
+
+    width:100px;
+    height:100px;
+    background-color: black;
+    transition-delay: 2s;
+    transition: transform 0.5s, background-color 2s, scale 2s, rotate 4s ease-out;
+
+}
+div:hover{
+    background-color: blue;
+    transform:rotate(2880deg) scale(2);
+}

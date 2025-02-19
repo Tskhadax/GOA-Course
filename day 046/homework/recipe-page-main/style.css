@@ -1,0 +1,99 @@
+:root{
+    --color: #854435;
+    --text-color: #6d6266;
+    --bold-text: rgb(80, 90, 80)
+}
+h2, h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+body{
+    background-color: #f3e5d8;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* height:100vh */
+}
+h3{
+    color: #713d53;
+    margin-left:20px
+}
+.menu{
+    margin:80px;
+    padding:30px 30px 0 30px;
+    width:600px;
+    background-color: white;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+}
+li, p, table{
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+p, li{
+    font-size:14px
+}
+table{
+    font-size:15px
+}
+h1{
+    color:black;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+*{
+    color:var(--text-color)
+}
+.section{
+   margin-top:30px;
+   margin-bottom:30px;
+}
+
+img{
+    border-radius:24px;
+}
+#b, ol{
+    margin-left:-20px
+}
+h2, ul li::marker, ol li::marker{
+    color: var(--color)
+}
+ul li::marker, ol li::marker{
+    font-weight:900;
+}
+ul li, ol li{
+    padding-left:20px;
+    padding-top:10px
+}
+
+b, .a{
+    color:var(--bold-text);
+    font-weight:bolder
+}
+.a{
+    color:var(--color);
+}
+table{
+    border-collapse: collapse;
+    width:500px;
+    margin-left:30px;
+    border-style:none
+}
+td{
+    padding-left:30px;
+    border-style:none;
+    height:30px
+}
+tr{
+    border-bottom-style:groove;
+    border-width: 1px;
+}
+tr:nth-child(4){
+    border-bottom-style: none;
+}

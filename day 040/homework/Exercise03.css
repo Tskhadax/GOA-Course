@@ -1,0 +1,18 @@
+/*   2) დღეს ნასწავლი მასალით google font-ში მოძებნეთ თქვენი საყვარელი font შემდეგ ჩამოწერეთ ნუშის დადებითი და უარყოფითი თვისებები */
+
+
+body{
+    font-family: "Playwrite MX Guides", cursive; ;
+    background-color: black;
+    color: hotpink;
+    text-shadow: 20px 0px 20px;
+    transition:0.3s;
+    border: 10px solid ;
+    padding:20px;
+    text-align: center;
+    
+}
+
+body:hover{
+    color: rgb(201, 0, 107);
+}

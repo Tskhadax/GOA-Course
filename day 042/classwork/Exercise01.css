@@ -1,0 +1,43 @@
+/* 1) შექმენით ღილაკი რომელსაც თავდაპირევალად ექნება ბექგრაუნდის ფერი და ტექსტის ფერი, როდესაც მასზე მაუსს მივიტანთ შეიცვალოს ბექგრაუნდის ფერი, ტექსტის ფერი გაიზარდოს ზომაში(სიგანეში), ხოლო როდესაც მას დააჭერთ დაჭერის მომენტში შეიცვალოს ტექტის ზომა(გაიზარდოს) და გაიზარდოს სიმაღლე, ასევე თუ ბორდერებსაც დაუმატებთ თქვენი გემოვნებით კარგი იქნება */
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+g:hover{
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: aqua;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+}
+
+g::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+g::before{
+    content: " ";
+    background: red;
+    position:absolute;
+    top: -2px;
+    left: -2px;
+    border-radius: 10px;
+}
+
+g:active{
+    color: black;
+    font-weight: bold;
+}

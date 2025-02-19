@@ -1,0 +1,10 @@
+/* 
+2) საიტზე დაამატეთ სამი სახის ტექსტი თითოეულ მათგანში თქვენი სიტყვებით ახსენით სამივე css ის წერის სტილი (internal, inline, external) და იმ ტექსტის გასასტილად გამოიყენეთ შესაბიმის css რომელზეც იმ ტექსტში გექნებათ საუბარი
+*/
+
+h1{
+    background-color: greenyellow;text-align: center;
+}
+body{
+    background-color: greenyellow;
+}

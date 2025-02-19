@@ -1,0 +1,45 @@
+/* 3) დაწერეთ რამდენიმე განსხვავებული ფერის ზომის სისქის და font-ის ტექსტები */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&display=swap');
+
+
+.p1{
+    font-family: "Badeen Display", serif;
+    color:red;
+    font-size: 10px;
+    font-weight: 100;
+
+}
+.p2{
+    font-family: "Playfair Display", serif;
+    color:green;
+    font-size:20px;
+    font-weight: 200;
+}
+.p3{
+    font-family: "Playwrite CO Guides", serif;
+    color:blue;
+    font-size:30px;
+    font-weight: 300;
+}
+.p4{
+    font-family: "Ubuntu", serif;
+    color:pink;
+    font-size:40px;
+    font-weight: 400;
+}
+.p5{
+    font-family: "Poppins", serif;
+    color:blueviolet;
+    font-size:50px;
+    font-weight: 500;
+}
+.p6{
+    font-family: "Badeen Display", serif;
+    color:lightsalmon;
+    font-size:60px;
+    font-weight: 600;
+}

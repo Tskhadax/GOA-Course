@@ -1,0 +1,21 @@
+
+body{
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    height:97vh;
+    align-items: center;
+    overflow: hidden;
+}
+div{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color: rgb(0, 255, 0);
+    cursor:pointer;
+    transition:0.5s
+}
+div:hover{
+    transform:scale(2);
+    background-color: rgb(0, 162, 255);
+}

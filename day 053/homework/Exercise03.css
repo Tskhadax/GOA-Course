@@ -1,0 +1,30 @@
+body{
+    height:100vh;
+    overflow: hidden;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/414/419/small_2x/58hp_dfa3_180801.jpg');
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+}
+div{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color: blue;
+    animation-name:Ball;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    transition-timing-function:step-end
+}
+@keyframes Ball{
+    0%, 100%{
+        position:relative;
+        top:65%;
+        box-shadow:0px 10px 10px black;
+    }
+    50%{
+        top:20%;
+        box-shadow:0px 0px 3px black;
+    }
+}

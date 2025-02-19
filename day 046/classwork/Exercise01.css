@@ -1,0 +1,25 @@
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: darkgreen;
+}
+header{
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+nav,ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 1.1rem;
+    
+    
+}

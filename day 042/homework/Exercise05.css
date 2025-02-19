@@ -1,0 +1,32 @@
+ /* 4) გამოიყენეთ :hover რათა მაუსის ლინკზე გადატარებისას ტექსტის ფერი და background შეიცვალოს  */
+ /* 5) გამოიყენეთ :active რათა ლინკზე დაჭერის მომენტში background გამუქდეს და ტექსტის ზომა შეიცვალოს */
+
+
+
+ .container{
+    padding:90px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    color:rgb(245, 61, 153);
+    background-color: pink;
+    border: 2px solid rgb(245, 61, 153);
+    border-radius: 5px;
+    box-shadow: 10px 0px 20px;
+    transition: 0.5s;
+}
+
+
+button:hover{
+    background-color: rgb(190, 128, 247);
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+button:active{
+    font-size: large;
+    background-color: rgb(88, 97, 228);
+    color: rgb(34, 0, 255);
+    border: 2px solid  rgb(34, 0, 255);
+}

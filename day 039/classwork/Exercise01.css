@@ -1,0 +1,27 @@
+#a{
+    text-decoration: overline; 
+}
+#b{
+    text-decoration: dashed;
+}
+#g{
+    text-decoration: dotted;
+}
+#d{
+    text-decoration: double;
+}
+#e{
+    text-decoration: line-through;
+}
+#v{
+    text-decoration: solid;
+}
+#z{
+    text-decoration:underline;
+}
+#t{
+    text-decoration: wavy;
+}
+#i{
+    text-decoration: none;
+}

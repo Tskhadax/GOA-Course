@@ -1,0 +1,34 @@
+#l1{
+    list-style-type:armenian;
+    list-style-position: inside;
+}
+#l2{
+    list-style-type:circle;
+    list-style-position: outside;
+}
+#l3{
+    list-style-type:decimal;
+    list-style-position: inherit;
+}
+#l4{
+    list-style-type:decimal-leading-zero;
+
+}
+#l5{
+    list-style-type:disc;
+}
+#l6{
+    list-style-type:georgian;
+}
+#l7{
+    list-style-type:lower-alpha;
+}
+#l8{
+    list-style-type:lower-greek;
+}
+#l9{
+    list-style-type:lower-latin;
+}
+#l10{
+    list-style-type:lower-roman;
+}

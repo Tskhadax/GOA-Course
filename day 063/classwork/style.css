@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.all-header{
+    display: flex;
+    border: 1px solid black;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style-type:none;
+    gap: 20px;
+}
+
+.nav-bar{
+    display: flex;
+    gap: 20px;
+}
+.logo{
+    display: flex;
+}
+
+
+.logo p{
+    font
+}

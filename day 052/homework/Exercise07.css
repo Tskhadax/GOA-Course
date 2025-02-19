@@ -1,0 +1,21 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+    background-color: black;
+}
+div{
+    cursor:pointer;
+    height:200px;
+    width:200px;
+    background-color: red;
+    transition: 0.5s;
+    box-shadow:0px 0px 10px red
+}
+div:hover{
+    transform:rotate(180deg) scale(1.5);
+    box-shadow:0px 0px 10px blue;
+    background-color: blue;
+}

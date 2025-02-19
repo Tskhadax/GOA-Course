@@ -1,0 +1,24 @@
+<!--    Level 53
+                transform:
+    transtale() - გადატანა
+        translateX()
+        transtaleY()
+    rotage() - მობრუნება
+        rotageX()
+        rotageY()
+    scale() - გადიდება
+        scaleX()
+        scaleY()
+    skew() - გაწელვა გრადუსებით
+        skrewX()
+        skrewY()
+-->
+<!-- transition-delay: დაყოვნება -->
+
+<!-- animation -->
+
+<!-- 
+    animation-name: სახელი
+    animation-duraction: გამეორება
+    animation-delay: დაყოვნება
+    animation-iteration-count: რამდენჯერ მოხდეს -->

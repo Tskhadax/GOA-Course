@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    height:100vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items:center
+}
+div{
+    width:200px;
+    height:200px;
+    animation-name:Color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor:pointer
+}
+@keyframes Color{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: blue;
+    }
+}

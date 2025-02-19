@@ -1,0 +1,34 @@
+body{
+    display:flex;
+    justify-content:space-between;
+    height:100vh;
+    background: linear-gradient(black, grey);
+}
+.logo{
+    position:fixed;
+    top:170px;
+    right:300px;
+    width:450px;
+    text-align:justify;
+    backdrop-filter: blur(20px);
+    padding:30px;
+    border-radius:20px;
+    border:1px solid black;
+    box-shadow:0px 0px 10px black
+}
+img{
+    width:350px;
+    border-radius:20px;
+}
+h1{
+    font-size:60px;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.img{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}

@@ -1,0 +1,12 @@
+
+.parent{
+    font-size: 500px;
+}
+
+.child{
+    font-size: 25%;
+}
+
+.child p{
+    font-size: 50%;
+}

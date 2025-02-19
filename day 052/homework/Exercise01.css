@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+div{
+    width:100px;
+    height:100px;
+    background-color: aquamarine;
+    transition: 0.5s;
+    cursor:pointer;
+}
+div:hover{
+    transform:translate(20px, 10px);
+    background-color: red;
+}

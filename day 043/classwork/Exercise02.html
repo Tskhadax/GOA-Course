@@ -1,0 +1,31 @@
+<!-- 2) შექმენით ფორმა რომელშიც იქნება რამდენიმე ინფუთი აქედან ორ ინფუთს ექნება ტექსტის ტიპი(სახელი, გვარი), ორ ინფუთს ექნება პაროლის ტიპი(პაროლი, გაიმეორე პაროლი) და ერთ ინფუთს ექნება მეილის  შემდეგ თითოეულ ინფუთის ტიპს მიწვდებით css იდან და შეუცვლით თქვენთვის სასურველ სტილებს, ყველას ქონდეს განსხავებული სტილები, შეუცვალეთ ბორდერები, outline, ფერები ..... -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <link rel="stylesheet" href="./Exercise03.css">
+</head>
+<body>
+    <form class="custom-form">
+        <label for="first-name">name</label>
+        <input type="text" id="first-name" class="text-input" name="first-name" placeholder="enter your name">
+        
+        <label for="last-name">lastname</label>
+        <input type="text" id="last-name" class="text-input" name="last-name" placeholder="enter your lastname">
+        
+        <label for="password">password</label>
+        <input type="password" id="password" class="password-input" name="password" placeholder="enter your password">
+        
+        <label for="confirm-password">password</label>
+        <input type="password" id="confirm-password" class="password-input" name="confirm-password" placeholder="repit password">
+        
+        <label for="email">mail<label>
+        <input type="email" id="email" class="email-input" name="email" placeholder="enter your mail">
+        
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

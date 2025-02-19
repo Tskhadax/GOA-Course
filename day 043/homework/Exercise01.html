@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th {
+      background-color: #00bcd4; /* Teal background */
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px;
+    }
+
+    td {
+      padding: 15px;
+      text-align: center;
+      color: #9e9e9e; /* Gray text color */
+      font-weight: 500;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:nth-child(odd) {
+      background-color: white;
+    }
+
+    table, th, td {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>HEADER</th>
+        <th>HEADER</th>
+        <th>HEADER</th>
+        <th>HEADER</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Item</td>
+        <td>Item</td>
+        <td>Item</td>
+        <td>Item</td>
+      </tr>
+      <tr>
+        <td>Item</td>
+        <td>Item</td>
+        <td>Item</td>
+        <td>Item</td>
+      </tr>
+      <tr>
+        <td>Item</td>
+        <td>Item</td>
+        <td>Item</td>
+        <td>Item</td>
+      </tr>
+      <tr>
+        <td>Item</td>
+        <td>Item</td>
+        <td>Item</td>
+        <td>Item</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

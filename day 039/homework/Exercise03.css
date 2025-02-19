@@ -1,0 +1,8 @@
+/* 2) შექმენით პარაგრაფი რომელსაც ქვეშ ექნება გასმული ტალღოვანი ხაზი და ამ ხაზის ფერი იქნება მწვანე ხოლო ტექსტის ფერი შავი */
+
+p{
+    color:black;
+    text-decoration:underline;
+    text-decoration-style: wavy;
+    text-decoration-color:green;
+}

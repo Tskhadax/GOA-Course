@@ -1,0 +1,76 @@
+.hello {
+    padding-right: 90px;
+    text-align: right;
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-style: dashed;
+}
+
+.world{
+   text-align: center; 
+   font-size: 25px;
+   text-decoration: line-through;
+   text-decoration-color: blueviolet;
+}
+
+.goal{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: cadetblue;
+}
+
+.oriented{
+    font-size: 25px;
+    padding-right: 90px;
+    text-align: right;
+    text-decoration:line-through ;
+    text-decoration-color: rgb(10, 170, 170);
+    text-decoration-style: dotted;
+}
+
+.academy{
+    font-size: 25px;
+    padding-left: 30px;
+    text-decoration: line-through;
+    text-decoration-color:red;
+}
+
+.is{
+    font-size:25px;
+    padding-left: 30px;
+    text-decoration: overline;
+    text-decoration-color: hotpink;
+}
+.the{
+    font-size: 25px;
+    text-align: right;
+    padding-right: 90px;
+    color: forestgreen;
+    text-decoration: overline;
+    text-decoration-color:forestgreen;
+
+}
+.best{
+    text-decoration: overline;
+    text-decoration-color:gray;
+    font-size:40px;
+    color:gray;
+    text-align:center;
+
+}
+.one{
+    text-align: right;
+    padding-right:90px;
+    text-decoration:underline;
+    font-size:25px;
+    text-decoration-style:dashed
+}
+.heart{
+    text-align:center;
+    font-size:70px;
+    margin-bottom: 100px;
+    
+}

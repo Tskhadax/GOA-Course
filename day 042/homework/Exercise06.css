@@ -1,0 +1,30 @@
+/* ) შექმენი ლინკი, რომელიც ნორმალურ მდგომარეობაში შავი ფერის იქნება, ხოლო :hover-ის დროს შეიცვალოს მუქი ნაცრისფრად. */
+
+
+.container{
+    padding:90px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    color:rgb(12, 3, 8);
+    background-color: rgb(119, 118, 118);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 10px 0px 20px;
+    transition: 0.5s;
+}
+
+
+button:hover{
+    background-color: rgb(166, 162, 170);
+    color: rgb(42, 42, 43);
+    border: 2px solid rgb(27, 27, 27);
+}
+
+button:active{
+    font-size: large;
+    background-color: rgb(207, 207, 212);
+    color: rgb(99, 99, 100);
+    border: 2px solid  rgb(129, 128, 132);
+}
