@@ -1,3 +1,5 @@
+#ცარიელი ფაილების გადამოწმება
+
 import os
 import sys
 
@@ -34,7 +36,7 @@ def find_empty_files(directory):
     print(f"\n✅ Total empty files: {empty_files_count}")
 
 # 🔹 Set target directory
-target_directory = r"C:\Users\dside\Desktop\GOA-Homeworksss"
+target_directory = r"C:\Users\dside\Desktop\GOA-Homeworks"
 
 # 🔹 Run function
 find_empty_files(target_directory)
