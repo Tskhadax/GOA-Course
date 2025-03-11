@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.button button {
+    padding: 10px 30px;
+    font-size: 16px;
+}
+
+.secondb {
+    color: #003478;
+    font-style: 600;
+    border: 1px solid #003478;
+    background-color: #ffffff;
+}
+
+.firstb {
+    color: #494949;
+    font-weight: 400;
+    border: none;
+    background-color: #ffffff;
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 80%;
+    padding: 0px 50px;
+
+}
+
+nav ul li b {
+    color: #28344A;
+    font-weight: 600;
+}
+
+nav ul li {
+    color: #28344A;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+}
+
+.linediv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.line {
+    width: 100%;
+    background-color: #303231;
+    height: 55px;
+    gap: 10px;
+}
+
+.yellowcar {
+    position: absolute;
+    right: -500px;
+}
+
+.fordmustang {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 550px;
+    height: 450px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 130px;
+}
+
+.fordmustang h1 {
+    color: #152137;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 68px;
+}
+
+.fordmustang h1 span {
+    color: #fbaa0c;
+    font-weight: 700;
+
+}
+
+.fordmustang h2 {
+    padding-bottom: 120px;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 68px;
+}
+
+.fordmustang h2 span {
+    font-weight: 300;
+    font-size: 25px;
+    font-weight: 300;
+
+}
+
+.videodiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bu {
+    padding: 20px 40px;
+}
+
+.build {
+    background-color: #003478;
+    color: white;
+    border: none;
+}
+
+.watch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    border: none;
+    gap: 20px;
+    background-color: #fff;
+    color: #28344A;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fa-bars {
+    display: none !important;
+}
+
+
+.custom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303231;
+    height: 85px;
+}
+
+.custom p {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+
+
+
+.gasafleqsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0px;
+}
+
+.colordiv {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.d1 {
+    /* border: 1px solid red; */
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.but {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+}
+
+.blue {
+    background-color: #5046C7;
+
+}
+
+.orange {
+    background-color: #FF6645;
+}
+
+.lightblue {
+    background-color: #81D9F8;
+}
+
+.d1 h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #233443;
+}
+
+.d1 p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #333333;
+}
+
+
+
+.learnmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.learnmore p {
+    color: #FF6645;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.buttomlinkdiv {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttomlinkdiv button {
+    width: 274px;
+    height: 54px;
+    border: none;
+    background-color: #003478;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.buttomlinkdiv p {
+    font-size: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: underline solid #0276B3;
+    color: #0276B3;
+}
+
+.mainp {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #303231;
+}
+
+.pricediv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.pricediv div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 275px;
+    height: 142px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.pricediv div h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #233443;
+}
+
+.pricediv div p {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #333333;
+}
+
+.motor1 h4 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 146%;
+    color: #303231;
+    width: 70%;
+}
+
+.motor1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.ekoboost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 100px;
+}
+
+.teqsti {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    width: 50%;
+}
+
+.tichkadiv {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tichkadiv div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tichkadiv div button {
+    border-radius: 50%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: #3d6343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tichkadiv div p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #333333;
+}
+
+.teqsti h6 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #303231;
+}
+
+.teqsti p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1330px) {
+    .fordmustang {
+        justify-content: center;
+        gap: 200px;
+    }
+
+    .fordmustang h1 {
+        font-size: 50px;
+    }
+
+    .fordmustang h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1235px) {
+    .navi {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    nav ul li {
+        font-size: 13px;
+    }
+
+    .button button {
+        font-size: 13px;
+        padding: 5px 20px;
+    }
+
+    header {
+        gap: 50px;
+        padding: 20px 40px;
+    }
+
+    .imgdivi img {
+        width: 400px;
+    }
+
+    .teqsti {
+        gap: 30px;
+    }
+
+    .teqsti h6 {
+        font-size: 25px;
+    }
+
+    .teqsti p {
+        font-size: 14px;
+    }
+
+    .tichkadiv {
+        gap: 20px;
+    }
+
+    .tichkadiv div p {
+        font-size: 14px;
+    }
+
+    .tichkadiv div button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tichkadiv div button img {
+        width: 10px;
+    }
+
+    .ekoboost {
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width:860px) {
+    nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block !important;
+        font-size: 25px;
+    }
+
+    .navi {
+        justify-content: center;
+        width: 300px;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    header {
+        padding: 20px 100px;
+    }
+
+    .yellowcar {
+        display: none;
+    }
+
+    .fordmustang {
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        left: 0;
+        width: 400px;
+        height: 400px;
+    }
+
+    .linediv {
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        height: auto;
+        width: 100%;
+    }
+
+    .fordmustang h2 {
+        color: black;
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+
+    .fordmustang h1 {
+        font: 35px;
+        line-height: 50px;
+    }
+
+    .fordmustang h2 span {
+        font-size: 15px;
+    }
+
+    .custom p {
+        font-size: 30px;
+    }
+
+    .mainp {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:580px) {
+    .button {
+        display: none !important;
+    }
+
+    header {
+        padding: 20px 50px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    .navi {
+        width: 30px;
+    }
+
+    .fordmustang h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .fordmustang h2 {
+        font-size: 17px;
+    }
+
+    .bu {
+        padding: 15px 25px;
+    }
+
+    .videodiv button img {
+        display: none;
+
+    }
+
+    .fordmustang {
+        width: 280px;
+    }
+
+    .custom p {
+        font-size: 20px;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .mainp {
+        font-size: 10px;
+    }
+
+    .d1 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .d1 button {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .d1 h2 {
+        font-size: 13px;
+    }
+
+    .d1 p {
+        font-size: 12px;
+    }
+
+    .learnmore p {
+        font-size: 10px;
+    }
+
+    .learnmore img {
+        width: 4px;
+    }
+
+    .buttomlinkdiv button {
+        width: 200px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .buttomlinkdiv p {
+        font-size: 13px;
+    }
+
+    .custom p {
+        font-size: 15px;
+    }
+
+    .pricediv {
+        padding: 0;
+    }
+
+    .pricediv div {
+        width: 200px;
+        height: 100px;
+    }
+
+    .pricediv div h3 {
+        font-size: 12px;
+    }
+
+    .pricediv div p {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width:1080px) {
+    .pricediv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .colordiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+}
