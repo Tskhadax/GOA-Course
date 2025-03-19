@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    background-color: #f1f1f1;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.headerparagraph{
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+.headerparagraph span{
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffa03f;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px ;
+}
+nav ul li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 20px;
+    color:#000000;
+}
+header i{
+    font-size: 25px;
+}
+.hero-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 50px 100px;
+    position: relative;
+}
+.hero-text{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+
+.box-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -10px 5px 10px  rgb(224, 226, 224);
+    border-radius: 32px;
+    gap:60px;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 10;
+    top: 70px;
+    backdrop-filter: blur(10px);
+}
+.arrowdiv{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+    
+}
+
+.arrowdiv div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.arrowdiv div h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+.arrowdiv div img{
+    width: 15px;
+    height: 15px;
+}
+.arrowdiv p{
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000A6;
+}
+.yellow-search{
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+}
+.hero-text h1{
+    font-weight: 700;
+    font-size: 70px;
+    color: #000000;
+    /* line-height: 137px; */
+}
+.hero-paragraph{
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 137px; */
+    color:#000000BF ;
+}
+.hero-text span{
+    text-decoration: underline  5px solid #ffa03f;
+}
+
+.hero-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.double-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.double-image img{
+    width: 200px;
+    height: 320px;
+}.camel-image{
+    width: 300px;
+}
+
+.planeimg,.lineimg{
+    position: absolute;
+    top: -10px;
+    right: 150px;
+}
+.lineimg{
+    width: 150px;
+}
+.planeimg{
+    right: 110px;
+    top: 1;
+}
