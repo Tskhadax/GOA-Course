@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #111;
+    color: #fff;
+  }
+  
+  .keys {
+    margin-top: 50px;
+  }
+  
+  button {
+    font-size: 24px;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+  
+  .premium {
+    background: gold;
+    color: black;
+  }
+  

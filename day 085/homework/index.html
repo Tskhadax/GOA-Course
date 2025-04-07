@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🥁 Drum Kit</h1>
+  <div class="keys">
+    <button data-key="A">A</button>
+    <button data-key="S">S</button>
+    <button data-key="D">D</button>
+    <button data-key="P" class="premium">P (Premium)</button>
+  </div>
+
+  <audio data-key="A" src="sounds/kick.wav"></audio>
+  <audio data-key="S" src="sounds/snare.wav"></audio>
+  <audio data-key="D" src="sounds/hihat.wav"></audio>
+  <audio data-key="P" src="sounds/premium.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
