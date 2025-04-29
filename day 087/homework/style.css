@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(wallpaperflare.com_wallpaper_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Bungee Tint;
+    position: relative;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.553);
+    /* opacity: 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+img{
+    width: 300px;
+}
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+.imgdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgdiv p{
+    font-size: 30px;
+    font-weight: 700;
+}
+.all{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+button{
+    padding: 10px 25px;
+    background-color: #c30001;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor:pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+button:hover{
+    scale: 1.2;
+    background-color: rgb(126, 4, 4);
+}
+
+.paragraphdiv{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    gap: 140px;
+}
+#h1{
+    position: absolute;
+    top: 50px;
+}
+
+.bigdiv{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.634);
+    position: absolute;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 1;
+    
+}
+
+.won{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    background-image: url(walpaper2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    box-shadow: 0px 0px 10px #fff;
+    animation: player2 2s linear  infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: abs;
+    z-index: 10;
+}
+
+.h2{
+    text-shadow: 2px 4px 5px rgb(0, 0, 0);
+    animation: player1 2s linear  infinite;
+}
+
+.scoresdiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.scoresdiv h3{
+    font-size: 30px;
+}
+
+.gif{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none;
+    object-fit: cover;
+    z-index: 5;
+}
+
+@keyframes player2{
+    0%{
+        box-shadow: 0px 0px 5px rgb(255, 247, 6);
+    }
+    20%{
+        box-shadow: 0px 0px 5px rgb(0, 206, 199);
+    }
+    40%{
+        box-shadow: 0px 0px 5px rgb(33, 244, 0);
+    }
+    60%{
+        box-shadow: 0px 0px 5px rgb(0, 14, 211);
+    }
+    80%{
+        box-shadow: 0px 0px 5px rgb(255, 0, 242);
+    }
+    100%{
+        box-shadow: 0px 0px 5px rgb(255, 247, 6);
+    }
+}
+
+@keyframes player1{
+    0%{
+        text-shadow: 2px 4px 5px rgb(255, 247, 6);
+    }
+    20%{
+        text-shadow: 2px 4px 5px rgb(0, 206, 199);
+    }
+    40%{
+        text-shadow: 2px 4px 5px rgb(33, 244, 0);
+    }
+    60%{
+        text-shadow: 2px 4px 5px rgb(0, 14, 211);
+    }
+    80%{
+        text-shadow: 2px 4px 5px rgb(255, 0, 242);
+    }
+    100%{
+        text-shadow: 2px 4px 5px rgb(255, 247, 6);
+    }
+}
+
+@media (max-width:600px){
+    .square{
+        width: 100%;
+    }
+    #player1,#player2{
+        width: 100%;
+    }
+    
+}
+@media (max-width:480px){
+    .paragraphdiv{
+        gap: 20px;
+    }
+    .p{
+        font-size: 13px;
+    }
+    .imgdiv p{
+        font-size: 20px;
+    }
+    #h1{
+        font-size:25px ;
+    }
+}
+
