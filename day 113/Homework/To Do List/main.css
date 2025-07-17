@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+HU:wght@100..400&family=Space+Grotesk:wght@300..700&family=WDXL+Lubrifont+TC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --headerBgC: rgb(0, 0, 0);
+    --bodyBgC: rgb(11, 13, 18);
+    --pink: #cb5358;
+    --violet: #28002b;
+}
+
+/* header */
+header {
+    background-color: var(--headerBgC);
+    color: white;
+    display: flex;
+    padding: 15px 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: "Playwrite HU", cursive;
+    z-index: 2;
+    border-bottom: var(--pink) 1px solid;
+    box-shadow: 0px 3px 5px var(--violet)
+}
+
+header h1 {
+    font-size: 2.3rem;
+    font-family: "Playwrite HU", cursive;
+}
+
+nav {
+    background-color: rgb(5, 9, 10);
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(black, var(--violet))
+}
+
+::placeholder {
+    font-family: "Playwrite HU", cursive;
+}
+
+/*  */
+.curent {
+    cursor: pointer
+}
+
+#enebi {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+    padding: 10px;
+    transition: 0.5s;
+    transform: translateY(-300px);
+    background: linear-gradient(rgb(0, 0, 0), rgb(22, 0, 18))
+}
+
+.enebisArchevani {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transform: scale(0.9);
+    transition: 0.5s;
+    cursor: pointer;
+    gap: 10px
+}
+
+.enebisArchevani:hover {
+    transform: scale(0.95);
+    background-color: rgb(16, 0, 5);
+}
+
+.enebisArchevani img,
+.language {
+    width: 50px;
+}
+
+
+.curent .hidden-images {
+    opacity: 1;
+    transform: translateY(10px) scale(1);
+}
+
+h2 {
+    font-family: "Karla", sans-serif;
+}
+/* message Box */
+#message{
+    min-width:300px;
+    position:absolute;
+    z-index:0;
+    left:5px;
+    transition:0.6s;
+    transform:translateY(-400px);
+    /* width:40%; */
+    max-width:500px;
+    height:100px;
+    border:3px solid rgb(0, 255, 0);
+    border-radius:0px 0px 10px 10px;
+    color:rgb(0, 255, 0);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#message strong{
+    text-align: center;
+    font-size:1.1rem;
+    line-height: 1.5;    
+}
+.icon {
+    font-size:2rem;
+    margin-right:10px;
+    cursor:pointer;
+    animation:move 2s alternate infinite
+}
+@keyframes move {
+    from {
+        transform: translateY(-2px)
+    }
+    to{
+        transform: translateY(2px)
+    }
+}
+@media (max-width: 500px){
+    header h1{
+        font-size:1rem;
+    }
+}

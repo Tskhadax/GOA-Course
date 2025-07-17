@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    top: 0;
+    backdrop-filter: blur(10px);
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    text-shadow: 0px 0px 5px;
+
+}
+
+header h1 {
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 2.1rem
+}
+
+header h1 span {
+    color: rgb(0, 170, 255)
+}
+
+header i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(0, 170, 255);
+}
+
+/* body */
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    width: 200%;
+}
+
+.input-container {
+    min-width: 250px;
+    max-width: 450px;
+    width: 60%;
+    position: relative
+}
+
+.input-container input {
+    width: 100%;
+    padding: 5px 20px;
+    /* border-radius:3px; */
+    border: none;
+    border-bottom: 1px solid rgb(0, 170, 255);
+    background: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    transition: 0.5s;
+    font-size: 1rem;
+    color: rgb(0, 170, 255);
+    text-shadow: 0px 0px 4px;
+    letter-spacing: 2px;
+}
+
+.input-container input:focus+label,
+.input-container input:not(:placeholder-shown)+label {
+    top: -15px;
+    left: 0px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: "Source Sans 3", sans-serif;
+    box-shadow: 0px 5px 3px rgb(0, 170, 255);
+    max-width: 500px;
+    min-width: 300px;
+    width: 40%;
+    padding: 10px;
+    min-height: max-content;
+    height: 400px;
+    position: relative
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%
+}
+
+section h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 0px 0px 5px rgb(0, 170, 255);
+    border-top: 1px solid rgb(0, 170, 255);
+    padding-top: 5px
+}
+
+.conteiner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px
+}
+
+button {
+    background: linear-gradient(to right, rgb(0, 127, 217), rgb(0, 217, 217));
+    padding: 10px 25px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 2px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, rgb(0, 217, 217), rgb(0, 127, 217));
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0px 3px 10px rgb(0, 78, 134)
+}
+
+section span {
+    color: red;
+    width: 60%;
+    min-width: 250px;
+}
+
+#main {
+    color: rgb(0, 255, 0)
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    transition: 0.5s
+}
+
+a:hover {
+    color: rgb(0, 170, 255)
+}
+
+/* login */
+#login {
+    transform: translateX(100%);
+    background-color: black;
+    transition: 1.5s;
+}

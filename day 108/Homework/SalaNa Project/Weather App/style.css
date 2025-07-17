@@ -1,0 +1,92 @@
+.main {
+    background: linear-gradient(rgb(13, 0, 23), rgb(0, 6, 26));
+    /* border: 1px solid white; */
+    padding: 50px;
+    border-radius: 5px;
+    min-width: 340px;
+    max-width: 360px;
+    width: 100%
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%
+}
+
+input {
+    background-color: rgba(4, 0, 71, 0.273);
+    border: none;
+    border-radius: 5px;
+    min-width: 100px;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    color: white;
+    outline: none;
+}
+
+.main button {
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(34, 255, 0);
+    cursor: pointer
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px
+}
+
+.weatherApp {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#navigation {
+    position: absolute;
+    min-width: 250px;
+    width: 50%;
+    right: -100%;
+    padding: 30px;
+    background-color: rgb(5, 0, 6);
+    font-family: var(--family-2);
+    text-shadow: 0px 0px 4px;
+    transition: 0.5s ease-in-out
+}
+
+#navigation ul {
+    list-style-type: none;
+    line-height: 2.5;
+}
+
+#navigation ul a {
+    text-decoration: none;
+}
+
+#navigation ul a li {
+    color: var(--white);
+    padding: 3px;
+    margin: 5px;
+    transition: 0.7s;
+}
+
+#navigation ul a li:hover {
+    background-color: rgb(8, 0, 16);
+    transform: translateY(-10px)
+}
+
+#navigation button {
+    font-size: 1rem;
+    padding: 4px 6px;
+    margin-top: 30px
+}

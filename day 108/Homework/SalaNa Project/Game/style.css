@@ -1,0 +1,159 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px
+}
+
+.main-section {
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#navigation {
+    margin-top: 100px;
+    z-index: 2
+}
+
+.sky {
+    background-color: rgb(0, 183, 255);
+    width: 100%;
+    height: 45%;
+    min-height: 200px;
+    animation: modelChange 20s infinite alternate;
+    display: flex;
+    align-items: end;
+}
+
+@keyframes modelChange {
+    0% {
+        background-color: rgb(0, 183, 255);
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+#rock {
+    width: 30px;
+    height: 60px;
+    background-color: rgb(0, 135, 0);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.rock {
+    animation: rockMove 2s infinite linear;
+}
+
+@keyframes rockMove {
+    from {
+        transform: translateX(6000%)
+    }
+
+    to {
+        transform: translateX(-1000%)
+    }
+}
+
+#arrow {
+    display: none
+}
+
+#user {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(34, 0, 128);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    left: 100px;
+}
+
+#message {
+    position: relative;
+    top: -110px;
+    left: 40px
+}
+
+#score {
+    position: relative;
+    left: 85%;
+    top: -160px;
+    color: white
+}
+
+#user img {
+    position: relative;
+    top: -30px
+}
+
+.Land {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(0, 135, 0);
+}
+
+.gamer {
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+}
+
+.avatars {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.jumpUser {
+    animation: jump 0.5s infinite linear;
+}
+
+.gamer {
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+.gamer:hover {
+    background-color: rgb(5, 5, 5);
+    transform: translateY(-10px)
+}
+
+#btn {
+    background-color: rgb(0, 255, 0);
+    width: 100px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    border: none
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg)
+    }
+
+    30%,
+    70% {
+        transform: translateY(-100px)
+    }
+
+    50% {
+        transform: translateY(-140px)
+    }
+
+}

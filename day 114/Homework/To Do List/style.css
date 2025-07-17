@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+HU:wght@100..400&family=Space+Grotesk:wght@300..700&family=WDXL+Lubrifont+TC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headerBgC: rgb(6, 0, 17);
+
+}
+
+/* header */
+header {
+    background-color: var(--headerBgC);
+    color: white;
+    display: flex;
+    padding: 15px 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2
+}
+
+header h1 {
+    font-size: 2.3rem
+}
+
+/* main */
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: white; */
+
+
+}
+
+.reg-login h2 {
+    font-size: 2rem
+}
+
+.reg-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    gap: 88px;
+    transition: 0.5s;
+    background-color: transparent;
+    /* color:white; */
+    padding: 30px 60px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid rgb(2, 2, 2);
+    border-radius: 10px
+}
+
+.login,
+.registration {
+    transition: 0.5s
+}
+
+
+
+#reklama {
+    position: absolute;
+    height: 100%;
+    transform: translateX(-70px);
+    /* backdrop-filter:saturate(100%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    color: black;
+    /* background-image: url('https://i.pinimg.com/736x/09/c7/4d/09c74dd4b208cb9229289132cc8f4713.jpg');
+    background-size: contain;
+    background-repeat: no-repeat; */
+    padding: 30px 70px 30px 30px;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.9s;
+    z-index: 2;
+
+}
+
+.h1-model1 {
+    font-size: 2.5rem;
+    font-family: "Karla", sans-serif;
+    background: linear-gradient(to right, rgb(80, 0, 88), #cb5358);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* color:transparent */
+    border-right: 2px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    /* width: 0; */
+    animation: typing 4s steps(10) forwards, blink 1s step-end 10;
+}
+
+.h1-model2 {
+    font-size: 2.5rem;
+    font-family: "Karla", sans-serif;
+    background: linear-gradient(to right, rgb(170, 0, 0), #ffb0b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* color:transparent */
+    border-right: 2px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    /* width: 0; */
+    animation: typing 4s steps(10) forwards, blink 1s step-end 10;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 10ch
+    }
+
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#reklama p {
+    font-family: "Playwrite HU", cursive;
+    color: #cb5358;
+    background-clip: text;
+    font-weight: 700;
+    text-align: center;
+    font-size: 0.9rem
+}
+
+#reklama .bg {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    left: -50px;
+}
+
+#reklama button {
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #28002b;
+    transition: 0.5s;
+    color: #cb5358;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#reklama button:hover {
+    color: #28002b;
+    background-color: #cb5358;
+}
+
+/* forms style */
+.form {
+    max-width: 500px;
+    min-width: 300px;
+    width: 30%;
+    /* background-color: rgb(56, 56, 56); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    font-family: "Source Sans 3", sans-serif;
+    /* gap:15px; */
+    overflow: hidden;
+}
+
+form {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.inputs {
+    width: 100%;
+
+}
+
+.inputs input {
+    width: 100%;
+    padding: 10px 35px;
+    border: 1px solid grey;
+    outline-offset: 1px;
+    outline-color: rgb(0, 195, 255);
+    border-radius: 5px;
+    margin: 2px 0;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+
+}
+
+.condition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px
+}
+
+.condition a {
+    color: rgb(0, 68, 146);
+    transition: 0.3s;
+    text-decoration: underline 1.2px;
+}
+
+.condition a:hover {
+    color: blue
+}
+
+input[type='checkbox'] {
+    width: min-content
+}
+
+button[type='submit'] {
+    width: 100%;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button[type='submit']:hover {
+    transform: scale(1.05)
+}
+
+/* options-btns */
+/* .options-btns {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Source Sans 3", sans-serif;
+} */
+.model-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#option-model {
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    transform: translateY(-400px);
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(3px);
+    border-radius: 0px 0px 0px 10px;
+    right: 0;
+    display: flex;
+    flex-direction: column
+}
+
+#oprion-model .option {
+    color: white
+}
+
+.inputs {
+    position: relative
+}
+
+.inputs .fa-solid {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.options {
+    display: none
+}
+
+::placeholder {
+    color: white;
+    font-family: "Playwrite HU", cursive;
+}
+
+@media(max-width: 800px) {
+    .reg-login {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        max-width: 400px;
+        width: 90%;
+        overflow: hidden;
+        border: none
+    }
+
+    #reklama {
+        display: none
+    }
+
+    .option1 {
+        right: 30px
+    }
+
+    .options {
+        display: flex
+    }
+
+    #registration {
+        margin-right: 65px;
+    }
+
+    .form {
+        min-height: 400px
+    }
+
+}
+
+span {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 500;
+}

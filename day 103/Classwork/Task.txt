@@ -1,0 +1,7 @@
+დესტრუქცია - დაშლა
+
+let myArr = ['Nini', 'Gio', 'Ana']
+
+let [name1, name2, name3] = myArr
+console.log(name1)
+

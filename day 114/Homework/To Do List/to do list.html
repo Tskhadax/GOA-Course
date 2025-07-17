@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocuslyDOO</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./to do list.css">
+</head>
+
+<body>
+    <header>
+        <h1>FocusDoo</h1>
+        <div class="addThings">
+            <div class="input-message">
+                <input type="text" placeholder="Add a task">
+                <p id="message"></p>
+            </div>
+            <button>Add <i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="iconebi">
+            <i class="fa-solid fa-moon icon"></i>
+            <div class="profileInfo">
+                <i class="fa-solid fa-user"></i>
+                <span id="userNameDisplay">
+                    Ana2009
+                </span>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg" alt=""
+                class="language curent" id="Geo">
+        </div>
+
+    </header>
+    <div id="enebi">
+        <div class="enebisArchevani" id="Eng">
+            <img src="https://cdn.britannica.com/33/4833-050-F6E415FE/Flag-United-States-of-America.jpg" alt=""
+                class="language">
+            <strong>English</strong>
+        </div>
+    </div>
+    <main>
+        <section>
+            <div class="main-main">
+                <button id="main-btn">All</button>
+                <button id="main-btn">To Do</button>
+                <button id="main-btn">Completed</button>
+                <div class="main">
+                    <div class="todo-section">
+                        <h2>To do</h2>
+                        <ul class="user-task task"></ul>
+                    </div>
+                    <div class="completed-section">
+                        <h2>Completed</h2>
+                        <ul class="completed-task task"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sum">
+                <p>Total Tasks: <span id="total-count">0</span></p>
+                <p>Completed Tasks: <span id="completed-count">0</span></p>
+                <canvas id="taskDiagrama"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="./to do list.js"></script>
+</body>
+
+</html>

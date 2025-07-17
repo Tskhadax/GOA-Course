@@ -1,0 +1,19 @@
+დესტრუქცია - დაშლა
+
+let myArr = ['Nini', 'Gio', 'Ana']
+
+
+# დერტრუქცირება
+let [name1, name2, name3] = myArr
+
+console.log(name1) // Nini
+console.log(name2) // Gio
+console.log(name3) // Ana
+
+
+#
+let [name1,, name3] = myArr
+console.log(name1)  // Nini
+console.log(name3)  // Ana
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b2005d7310.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <header>
+        <h1>rose<span>ana</span></h1>
+    </header>
+    <main>
+        <section id="singup">
+            <h2>Sing Up</h2>
+            <form action="" id="singup-form">
+                <div class="conteiner">
+                    <div class="input-container ">
+                        <input type="text" id="Name" required placeholder=" " name="Name">
+                        <label for="Name">Name</label>
+                    </div>
+                    <span class="message">Text</span>
+                </div>
+                <div class="conteiner">
+                    <div class="input-container">
+                        <input type="text" id="Surname" required placeholder=" ">
+                        <label for="Surname">Surname</label>
+                    </div>
+                    <span class="message">Text</span>
+                </div>
+                <div class="conteiner">
+                    <div class="input-container">
+                        <input type="email" id="Email" required placeholder=" ">
+                        <label for="Email">Email</label>
+                    </div>
+                    <span class="message">Text</span>
+                </div>
+                <div class="conteiner">
+                    <div class="input-container">
+                        <input type="text" id="Username" required placeholder=" ">
+                        <label for="Username">Username</label>
+                    </div>
+                    <span class="message">Text</span>
+                </div>
+                <div class="conteiner">
+                    <div class="input-container">
+                        <input type="text" id="Password" required placeholder=" ">
+                        <label for="Password">Password</label>
+                    </div>
+                    <span class="message">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Text</span>
+                </div>
+                <span id="main" class="message">Registration sucsessful !</span>
+                <button>Submit</button>
+                <a href="#" id="singInBtn" class="btn">Log In</a>
+            </form>
+        </section>
+        <section id="login">
+            <form action="" id="login-form">
+                <h2>Log In</h2>
+                <div class="conteiner">
+                    <div class="input-container">
+                        <input type="email" id="login-email" required placeholder=" ">
+                        <label for="login-email">Email</label>
+                    </div>
+                    <span class="message">Text</span>
+                </div>
+                <div class="conteiner">
+                    <div class="input-container">
+                        <input type="text" id="login-username" required placeholder=" ">
+                        <label for="login-username">Username</label>
+                    </div>
+                    <span class="message">Text</span>
+                </div>
+                <div class="conteiner">
+                    <div class="input-container">
+                        <input type="text" id="login-password" required placeholder=" ">
+                        <label for="login-password">Password</label>
+                    </div>
+                    <span class="message">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Text</span>
+                </div>
+                <a href="#" id="SingUpBtn">Sing Up</a>
+                <button>Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="./form.js"></script>
+</body>
+
+</html>

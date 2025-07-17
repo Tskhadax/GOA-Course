@@ -1,0 +1,14 @@
+Task 000
+    Registration
+        * Css - respinsive
+        * Js - localStorage
+        * Js - modelChange
+        * Js - languageChange
+        * python - send message
+
+    Log in
+        * Css - respinsive
+        * Js - localStorage
+        * Js - modelChange
+        * Js - languageChange
+

@@ -1,0 +1,26 @@
+Level 114
+
+Class
+* class - რაღაცის ერთობლიობა
+
+იმისთვის რომ კლასი შევქმნათ უნდა დავწეროთ დამხმარე სიტყვა class და მერე კლასის სახელი. მას სჭირდება {} ჩვეულებრივად. 
+
+
+class Car{
+    constructor(name, model, color, year){ # კონსტრუქტორია
+        this.name = name
+        this.model = model
+        this.color = color
+        this.year = year
+    }
+
+    // ფუნქციის შესაქმნელად function() -ს აღარ ვწერთ
+    sound(){
+        console.log('pip')
+    }
+}
+
+const car1 = new Car('argumenti 1', 'argumenti 2', 'argumenti 3', 'argumenti 4')
+
+console.log(car1.name) // argumenti 1 იქნება შედეგი
+car1.sound() 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b2005d7310.js" crossorigin="anonymous"></script>
+    <title>Guinea pig shop</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>Sh</span>op
+        </h1>
+        <div class="searchThings">
+            <input type="search" placeholder="Type ... " list="suggestions">
+            <button>Search</button>
+        </div>
+
+        <datalist id="suggestions">
+            <option value="rodents">
+            <option value="guinea pig">
+            <option value="Female">
+            <option value="Male">
+        </datalist>
+    </header>
+    <main>
+        <aside>
+            <div class="title">
+                <h2>Filter</h2>
+                <i class="fa-solid fa-sliders"></i>
+            </div>
+            <!-- <div class="names div">
+                <h3>Name</h3>
+                <ul>
+                    <li>rodents</li>
+                    <li>guinea pig</li>
+                    <li>russian dwarf hamster</li>
+                    <li>syrian hamster</li>
+                </ul>
+            </div> -->
+            <div class="Color div">
+                <h3>sort by</h3>
+                <ul>
+                    <li>Age</li>
+                    <li id="sort-id">Id</li>
+                    <li id="price">Price</li>
+                </ul>
+            </div>
+            <div class="div1">
+                <h3>Price</h3>
+                <form class="price">
+                    <div class="contein-conteiner">
+                        <div class="conteiner">
+                            <input type="number" placeholder=" " id="Min" name="Min price" min="0">
+                            <label for="Min">
+                                Min $
+                            </label>
+                        </div>
+                        <div class="conteiner">
+                            <input type="number" placeholder=" " name="Max price" id="Max" min="0">
+                            <label for="Max">
+                                Max $
+                            </label>
+                        </div>
+                    </div>
+                    <button>Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </aside>
+        <section class="info">
+            <div class="card-conteiner">
+                <div class="card">
+                    <div class="img">
+                        <img src="" alt="" class="images">
+                    </div>
+                    <p>Test 000</p>
+                    <p>Test 001</p>
+                    <p>Test 002</p>
+                    <p>Test 003</p>
+                    <button>Details</button>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="" alt="" class="images">
+                    </div>
+                    <p>Test 000</p>
+                    <p>Test 001</p>
+                    <p>Test 002</p>
+                    <p>Test 003</p>
+                    <button>Details</button>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="" alt="" class="images">
+                    </div>
+                    <p>Test 000</p>
+                    <p>Test 001</p>
+                    <p>Test 002</p>
+                    <p>Test 003</p>
+                    <button>Details</button>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="" alt="" class="images">
+                    </div>
+                    <p>Test 000</p>
+                    <p>Test 001</p>
+                    <p>Test 002</p>
+                    <p>Test 003</p>
+                    <button>Details</button>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="" alt="" class="images">
+                    </div>
+                    <p>Test 000</p>
+                    <p>Test 001</p>
+                    <p>Test 002</p>
+                    <p>Test 003</p>
+                    <button>Details</button>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="" alt="" class="images">
+                    </div>
+                    <p>Test 000</p>
+                    <p>Test 001</p>
+                    <p>Test 002</p>
+                    <p>Test 003</p>
+                    <button>Details</button>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="" alt="" class="images">
+                    </div>
+                    <p>Test 000</p>
+                    <p>Test 001</p>
+                    <p>Test 002</p>
+                    <p>Test 003</p>
+                    <button>Details</button>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="" alt="" class="images">
+                    </div>
+                    <p>Test 000</p>
+                    <p>Test 001</p>
+                    <p>Test 002</p>
+                    <p>Test 003</p>
+                    <button>Details</button>
+                </div>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </nav>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

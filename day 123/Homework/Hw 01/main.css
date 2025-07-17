@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Manufacturing+Consent&family=Noto+Serif+Georgian:wght@100..900&family=Oswald:wght@200..700&family=Playwrite+HU:wght@100..400&family=Space+Grotesk:wght@300..700&family=WDXL+Lubrifont+TC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif Georgian", serif;
+    transition: 0.3s;
+}
+
+/* header */
+header {
+    backdrop-filter: blur(10px);
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    text-shadow: 0px 0px 5px;
+    position: relative;
+    z-index: 2;
+    /* box-shadow:0px 2px 3px rgb(0, 217, 217); */
+    /* border-bottom: 1px solid rgb(0, 217, 217) */
+}
+
+header h1 {
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 2.1rem
+}
+
+header h1 span {
+    color: rgb(0, 170, 255)
+}
+
+header i:nth-child(1) {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(0, 170, 255);
+}
+
+header .fa-cart-shopping {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(0, 255, 0);
+}
+
+body {
+    width: 100%;
+    position: relative;
+    height: 92vh;
+    background-color: rgb(3, 3, 3)
+}
+
+/* userInfo */
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+#task {
+    width: 340px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    transform: translateY(-300px);
+    transition: 0.5s ease-out;
+    border-bottom: 3px solid rgb(0, 217, 217);
+    border-left: 5px solid rgb(0, 217, 217);
+    border-radius: 5px
+}
+
+#task li {
+    list-style-type: none;
+    line-height: 1.5
+}
+
+.userMenu {
+    width: 340px;
+    /* min-height: 100px; */
+    padding: 25px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+    color: white;
+    border-bottom: 3px solid rgb(0, 217, 217);
+    border-left: 5px solid rgb(0, 217, 217);
+    border-radius: 5px;
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 90vh;
+    transform: translateX(500px);
+    top: 70px
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: auto;
+    max-height: 40vh;
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+.List i {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(0, 217, 217)
+}
+
+.List i:hover {
+    color: red;
+    animation: shake 0.5s alternate
+}
+
+@keyframes shake {
+
+    0%,
+    60% {
+        transform: rotate(20deg)
+    }
+
+    30%,
+    90% {
+        transform: rotate(-20deg);
+        font-size: 1.6rem
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.List div {
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    position: relative
+}
+
+.userMenu h2 {
+    border-bottom: 2px solid rgba(0, 217, 217, 0.205);
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+
+button {
+    margin-top: 20px;
+    background: linear-gradient(to right, rgb(0, 127, 217), rgb(0, 217, 217));
+    padding: 10px 25px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 2px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, rgb(0, 217, 217), rgb(0, 127, 217));
+    transform: translateY(-1px) scale(1.01);
+    /* box-shadow: 0px 3px 10px rgb(0, 78, 134) */
+}
+
+.messageBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Source Sans 3", sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+.messageBox h3 {
+    font-size: 1.5rem;
+}
+
+.messageBox button {
+    background: none;
+    color: white;
+    border-bottom: 1px solid rgb(40, 40, 40);
+    transition: 0.5s
+}
+
+.messageBox button:nth-child(1) {
+    color: blue
+}
+
+.messageBox button:nth-child(1):hover {
+    background-color: blue;
+    color: rgb(0, 0, 0)
+}
+
+.messageBox button:nth-child(2) {
+    color: rgb(255, 0, 0)
+}
+
+.messageBox button:nth-child(2):hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0)
+}
+
+.messageBox div {
+    border-top: 1px solid rgb(40, 40, 40);
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    color: white;
+    font-family: "Playfair Display", serif;
+    padding: 30px;
+    transition: 0.5s
+}
+
+main ul {
+    list-style-type: none;
+    font-size: 1.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color:white
+}
+
+/* section ul li {
+    position: relative;
+    text-decoration: none;
+    padding:5px 0
+}
+
+section ul li::after {
+    content: ' ';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 217, 217);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease
+}
+section ul li:hover::after, section ul li:focus::after {
+    transform: scaleX(1)
+} */
+/* aside{
+    position:absolute;
+    right:0;
+    width:50px;
+    background-color: aliceblue;
+} */
+
+.conteiner {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+}
+
+.item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.item img {
+    height: 120px;
+    transform: 0.5s;
+    width: 80px
+}
+
+.item .img {
+    height: 120px;
+    min-width: 80px;
+    overflow: hidden;
+    transition: 0.5s
+}
+
+.item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(16, 16, 16);
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: 0.5s;
+    border-left: 7px solid rgb(0, 170, 255);
+    border-radius: 5px;
+    font-family: "Playfair Display", serif;
+    height: 170px
+}
+
+.item:hover {
+    transform: translateY(5px);
+    background-color: rgb(40, 40, 40);
+}
+
+.item:hover img {
+    transform: scale(1.1)
+}
+
+.item input[type='number'] {
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.37);
+    border: 1px solid rgb(0, 217, 217);
+    color: rgb(0, 217, 217);
+    font-size: 0.9rem
+}
+
+.item button {
+    padding: 5px 15px;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 800
+}
+
+.item button:hover {
+    transform: none
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.5rem
+    }
+
+    main ul li {
+        font-size: 0.7rem
+    }
+}

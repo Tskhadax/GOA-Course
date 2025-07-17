@@ -1,0 +1,44 @@
+JSON - JavaScript Object Notation
+
+// object in JSON
+const JSONobj = {
+    'name': 'ana',
+    'surname': 'puturidze'
+}
+
+// object in JSON
+const obj = {
+    name: 'Ana',
+    surname: 'Puturidze'
+}
+
+// გასაგზავნად უფრო უკეთესია JSON რადგან ცოტა ადგილს იკავებს.
+
+
+// Asynchronus Code - როცა პარალელურად მუშაობს რამდენიმე კოდი
+
+// XML Http Request Object 
+
+// AJAX - Asynchronous JavaScript And XML
+
+* AJAX - 
+
+
+readyState property - ინახავს მდგომარეობას, თუ რა უნდა გააკეთოს. 
+
+
+ეს არის ყველა შესაძლებელი სტატუსი
+
+Unsent - (0) შექმნილია მაგრამ არ არის გამოძახებული
+
+Open - (1) - შექმნილია და გამოძახებულია, გადაეცემა ორი არგუმენტი, ჯერ გადავცემთ რისი გაკეთებაც გვინდა. მეთოდს. და მეორე არის აპი.
+
+Headers Receved - (2) send() ფუნქცია გამოძახებულია
+
+Loading - (3) - მოთხოვნა პროცესშია
+
+Done - (4) - მოთხოვნა შესრულებულია და პასუხი მზად არის.
+
+
+
+onreadyStateChange Property  -  განსაზღვრავს ფუნქციას რომელიც უნდა შესრულდეს readyState - ის დასრულების შემდეგ 

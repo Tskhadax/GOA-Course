@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    top: 0;
+    backdrop-filter: blur(10px);
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    text-shadow: 0px 0px 5px;
+
+}
+
+header h1 {
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 2.1rem
+}
+
+header h1 span {
+    color: rgb(0, 170, 255)
+}
+
+header i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(0, 170, 255);
+}
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap:20px;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+
+}
+.hero {
+    height: 88vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 0px 100px;
+    background-color: black;
+    flex-wrap:wrap
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-family: "Permanent Marker", cursive;
+    color: rgb(230, 230, 230);
+    letter-spacing: 10px;
+    transition: 0.2s
+}
+
+.hero p {
+    color: rgb(255, 255, 255);
+    font-family: "Permanent Marker", cursive;
+}
+
+.hero img {
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    filter: sepia(0.1) brightness(1) opacity(0.9)
+}
+
+.text {
+    position: relative;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px
+}
+
+.light {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--x) var(--y), rgba(255, 255, 255, 0.364) 2%, transparent 7%);
+    z-index:0
+
+}
+
+.hero button {
+    background: none;
+    border: 2px solid black;
+    transition: 0.5s;
+    font-family: "Permanent Marker", cursive;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    cursor: pointer
+}
+
+.hero button:hover {
+    border: 2px solid  rgb(0, 170, 255);
+    color:  rgb(0, 170, 255);
+}
+
+/* second section */
+.mainDiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    transition:0.2s
+}
+
+.mainDiv p span {
+    color: grey;
+    text-decoration: line-through solid 1px;
+    font-size: 1rem;
+}
+
+.sale {
+    position: absolute;
+    max-height: 100px;
+    max-width: 100px;
+    bottom: -35px;
+    left: 0
+}
+
+/* .mainDiv:hover .child img{
+    filter: blur(2px)
+} */
+.mainDiv p {
+    color: rgb(0, 137, 0);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.mainDiv img {
+    height: 230px;
+    width: 170px; 
+    transition:0.5s
+}
+
+.child {
+    background-color: rgb(250, 250, 250);
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    transition: 0.3s;
+    border-radius:3px;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.mainDiv .child img:hover {
+    transform: scale(1.1);
+    filter: none;
+    background-color: rgb(200, 200, 200);
+}
+
+h2 {
+    font-family: "Permanent Marker", cursive;
+    margin-bottom:20px;
+    font-size:2rem;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 850px) {
+    .hero h1 {
+        font-size:1.9rem
+    }
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

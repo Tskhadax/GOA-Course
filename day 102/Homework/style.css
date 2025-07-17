@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0, 4, 25);
+}
+
+section {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    width: 80%;
+    max-width: 700px;
+    min-width: 200px;
+    position: relative;
+    background-color: rgba(0, 0, 75, 0.322);
+    border: 1px solid rgba(255, 255, 255, 0.284);
+    color: white;
+    border-radius: 5px
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Playwrite HU", cursive;
+    font-weight: 900;
+    text-shadow: 0px 0px 5px
+}
+
+/*  */
+.section form,
+.section,
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+form {
+    margin-top: 20px
+}
+
+input {
+    max-width: 450px;
+    min-width: 200px;
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.208);
+    background-color: rgba(0, 90, 135, 0.157);
+    /* box-shadow: 0px 0px 2px white; */
+    color: white;
+    outline: none;
+    font-weight: 500;
+}
+
+input[type='submit'] {
+    background-color: rgb(0, 0, 67);
+    color: white;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none
+}
+
+input[type='submit']:hover {
+    background-color: white;
+    color: rgb(0, 0, 67);
+}
+
+input[type='submit']:active {
+    opacity: 0.7;
+}
+
+#hidden {
+    position: absolute;
+    /* width:100px; */
+    height: 100%;
+    background: linear-gradient(rgb(31, 0, 31), rgb(0, 0, 67));
+    width: 50%;
+    top: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-shadow: 0px 0px 5px;
+    transition: 1s
+}
+
+#hidden button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px
+}
+
+h1 {
+    font-size: 45px;
+    font-family: "Playwrite HU", cursive;
+    text-transform: capitalize;
+}
+
+#message {
+    color: red;
+    font-weight: 600;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.62);
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.501);
+}

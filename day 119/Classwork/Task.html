@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Map
+                                // Key          Value         Key          Value
+        let userMap = new Map( [['KeyName1', 'KeyValue1'], ['KeyName2', 'KeyValue2']])
+
+        // ჯერ იწერება Key მერე მისი Value. ერთ სიაში. ყველაფერი კი ერთ მთლიან სიაში იქნება.
+
+        for (let item of userMap.values()){
+            console.log(item)
+        }
+
+        // მეთოდები: 
+        // .values() - მნიშვნელობებს გამოიტანს
+        // .keys() - გასაღების სახელს გამოტანს
+        // .set() - ორი არგუმენტი გადაეცემა. პირველი გასაღების სახელი რისი ჩამატებაც გვინდა და მეორე მისი მნიშვნელობა.
+
+
+    // Set
+        let userSet = new Set( [1, 2, 3, 3, 3, 3, 4, 5, 6, 7,7, 7, 8, 8,8,9 ,0 ])
+        // set ყვენა ნამეორებად ელემენტებს შლის და ერთს ტოვებს.
+        console.log(userSet.size)
+
+        // size - აბრუნებს სიგრძეს განმეორებადი ელემენტის წაშლის შემდეგ
+        // გასაღები არ აქვს.
+    
+        // მეთოდები
+        // .values() - მნიშვნელობებს გამოიტანს
+
+        // .delete(keyName)
+
+    
+    // ასიქრონული ფუნქციები
+        // ზოგადად ჩაშენებული ფუნქციებია მაგ. setTimeout
+    </script>
+</body>
+</html>

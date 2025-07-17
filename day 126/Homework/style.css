@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-1: hsl(214, 100%, 3%);
+    --color-2: hsl(277, 100%, 50%);
+    --color-3: hsl(257, 100%, 39%);
+    --color-4: hsl(210, 100%, 98%);
+
+    --font-1: "Rowdies", sans-serif;
+    --font-2: "Ubuntu", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 15px 25px;
+    font-family: var(--font-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+header input {
+    width: 60%;
+    max-width: 700px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.288);
+    color: white;
+    border: 1px solid var(--color-1);
+    font-family: var(--font-1);
+    font-weight: 100;
+}
+
+header h1 span {
+    color: var(--color-3)
+}
+
+header button , .price button {
+    background-color: rgb(0, 10, 41);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+header button:hover, .price button {
+    background-color: rgb(0, 17, 67);
+}
+
+/* body */
+
+body {
+    background-color: var(--color-4);
+    height: 90vh;
+    font-family: var(--font-2)
+}
+
+main {
+    height: 100%;
+    display: flex;
+    /* flex-direction: row */
+    position: relative
+}
+
+/* for aside section */
+
+aside {
+    width: 30%;
+    max-width: 320px;
+    min-width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* justify-content: center; */
+    gap: 30px;
+    padding: 50px 30px;
+    background-color: var(--color-1);
+    color: white;
+    z-index: 2
+}
+
+aside h2 {
+    font-size: 1.7rem;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+.title i {
+    font-size: 1.5rem
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+}
+
+.div ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%
+}
+
+.div ul li {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    gap: 20px;
+    border-bottom: 1px solid grey;
+    transition: 0.5s;
+    width: 200px;
+    /* min-width: 120px; */
+
+}
+
+.div ul li i {
+    color: var(--color-4);
+    transition: 0.5s
+}
+
+.div ul li:hover {
+    transform: translateY(3px);
+    cursor: pointer;
+}
+
+.div ul li:hover i {
+    color: black
+}
+
+.div {
+    width: 50%
+}
+
+.price input {
+    border: 1px solid white;
+    color:white;
+    border-radius:2px;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 5px 10px;
+    width: 100px;
+    text-align: center;
+    background: none;
+}
+
+.info {
+    width: 90%;
+    height: 90%;
+    padding: 30px;
+    overflow: auto;
+}
+
+.card-conteiner {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    height: 94vh;
+}
+
+.card {
+    /* width: 300px;
+    height:200px; */
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.card p {
+    color: rgb(40, 40, 40);
+    line-height: 1.5
+}
+
+.card p:nth-child(3) {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: var(--color-1)
+}
+
+.card p:nth-child(5) {
+    font-size:1.5rem;
+    color:rgb(1, 153, 1);
+    font-weight:900
+}
+
+.card button {
+    padding: 5px 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: var(--color-1);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    position:absolute;
+    right:20px;
+    bottom:20px
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    filter: blur(0.1px);
+}
+
+.img {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom:10px
+}
+
+.card:hover .images {
+    transform: scale(1.1);
+    filter: none
+}
+
+.price {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.contein-conteiner {
+    display: flex;
+    width: 100%;
+    align-items: end;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+/* .price button {
+    background-color: var(--color-1);
+    color: var(--color-4);
+    padding: 7px 15px;
+    font-size: 1rem;
+    border: 1px solid var(--color-3);
+    cursor: pointer
+} */
+
+.conteiner {
+    position: relative;
+    margin-top: 20px;
+}
+
+.conteiner label {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    transition: 0.4s
+}
+
+input:focus+label,
+input:not(:placeholder-shown)+label {
+    top: -20px;
+    left: 10px;
+    letter-spacing: 3px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 30px;
+    color: rgb(0, 255, 0)
+}
+
+i {
+    cursor: pointer
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    font-size: 1.8rem
+}
