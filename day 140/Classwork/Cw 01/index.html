@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16.0/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16.0/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main"></div>
+    <script>
+        ReactDOM.render(
+            React.createElement('div', { className: 'main' },
+                React.createElement('div', { className: "div-01" },
+                    React.createElement('img', { src: 'https://yt3.googleusercontent.com/yaO29uydEx0PfxuToT7uh_fP1cZGw-mcNrNZcCKTjDBTNvzn_5_gclYVAhBn5XFa-JgMKm6WwUY=s900-c-k-c0x00ffffff-no-rj' }),
+                    React.createElement('img', { src: 'https://yt3.googleusercontent.com/yaO29uydEx0PfxuToT7uh_fP1cZGw-mcNrNZcCKTjDBTNvzn_5_gclYVAhBn5XFa-JgMKm6WwUY=s900-c-k-c0x00ffffff-no-rj' }),
+                ),
+                React.createElement('h1', null, 'GOA'),
+                React.createElement('div', { className: 'div-02' }),
+            ),
+            document.querySelector('#main')
+        )
+    </script>
+</body>
+
+</html>

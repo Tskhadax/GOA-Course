@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(222, 222, 222);
+    font-family: "Rowdies", sans-serif;
+}
+
+header {
+    background-color: hsl(195, 10%, 8%);
+    padding: 20px 40px;
+    font-family: "Rowdies", sans-serif;
+}
+
+body {
+    height: 100vh;
+    min-height: max-content
+}
+
+main {
+    height: 88%;
+    display: flex;
+    min-height: max-content
+}
+
+.hero {
+    display: flex;
+    background: linear-gradient(hsl(195, 10%, 8%), black);
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Rowdies", sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.hero p {
+    line-height: 2;
+    font-weight: 300
+}
+
+.image img {
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    transition: 0.5s
+}
+
+.conteiner {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    min-width: 300px;
+    width: 50%;
+    gap: 20px
+}
+
+.hero button {
+    background-color: rgb(14, 14, 14);
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.2s
+}
+
+.hero button:hover {
+    background-color: rgb(24, 24, 24);
+    border: 1px solid rgb(18, 18, 18)
+}
+
+.text {
+    max-width: 500px
+}
+
+.hero h2 {
+    font-size: 4.5rem
+}
+
+footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    width: 100%;
+    font-size: 1rem
+}
+
+.ask {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    min-height: max-content;
+    transition:0.6s;
+}
+
+.conteiner-result {
+    height: 450px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* width: 100% */
+    max-height:500px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width:0
+}
+
+.result h1 {
+    font-size:3.5rem
+}
+.inputs {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position:relative
+}
+
+input {
+    width: 92%;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+    font-weight: 200;
+}
+
+.fa-xmark {
+    position:absolute;
+    bottom:100px;
+    right:0;
+    font-size:2rem;
+    cursor:pointer;
+    transition:0.5s
+}
+.fa-xmark:hover {
+    color:red
+}
+
+.paragrap {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.inputs button {
+    padding: 14px 17px;
+    background-color: black;
+    border: 1px solid grey;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+.inputs button:hover {
+    background-color: rgb(12, 12, 12);
+}
+/*  */
+.result {
+    margin-top:20px;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap:10px
+}
+
+.result p {
+    background-color: rgba(0, 0, 0, 0.726);
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.5s;
+    display:flex;
+    align-items: center;
+}
+
+.result p:hover {
+    background-color: rgb(20, 20, 20);
+    transform:translateY(4px)
+}
+
+@media (max-width: 500px) {
+    .hero h2 {
+        font-size: 2.5rem
+    }
+
+    .hero p {
+        font-size: 0.8rem
+    }
+
+    .text {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero {
+        gap: 2px
+    }
+}

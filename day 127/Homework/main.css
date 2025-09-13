@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-1: hsl(214, 100%, 3%);
+    --color-2: hsl(277, 100%, 50%);
+    --color-3: hsl(257, 100%, 39%);
+    --color-4: hsl(210, 100%, 98%);
+
+    --font-1: "Rowdies", sans-serif;
+    --font-2: "Ubuntu", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 15px 25px;
+    font-family: var(--font-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+header input {
+    width: 60%;
+    max-width: 700px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.288);
+    color: white;
+    border: 1px solid var(--color-1);
+    font-family: var(--font-1);
+    font-weight: 100;
+}
+
+header h1 span {
+    color: var(--color-3)
+}
+
+header button,
+.price button {
+    background-color: rgb(0, 10, 41);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+header button:hover,
+.price button {
+    background-color: rgb(0, 17, 67);
+}
+
+/* body */
+body {
+    background-color: var(--color-4);
+    height: 90vh;
+    font-family: var(--font-2)
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row */
+    position: relative
+}
+
+/* nav */
+nav {
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 30px;
+    color: rgb(0, 255, 0)
+}
+
+i {
+    cursor: pointer
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    font-size: 1.8rem
+}
+
+section {
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    width: 70%;
+    gap: 40px;
+    /* padding:40px; */
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    flex-direction: row-reverse
+}
+
+section h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+/*  */
+.imgBox {
+    max-width: 400px;
+    height: min-content;
+    min-width: 250px;
+    width: 70%;
+    overflow: hidden;
+    border-radius: 5px
+}
+
+.imgBox img {
+    width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.imgBox img:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    line-height: 1.9
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 25px
+}
+
+.conteiner button {
+    padding: 5px 15px;
+    font-size: 1rem;
+    background-color: rgb(0, 165, 0);
+    border-radius: 3px;
+    font-weight: 600;
+    color: var(--color-4);
+    letter-spacing: 1px;
+    border: 1px solid var(--color-1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.conteiner button:hover {
+    background-color: #0f0;
+    color: var(--color-1)
+}
+
+.conteiner input {
+    padding:6px 15px;
+    outline:none;
+    width:80px;
+    text-align: center;
+    font-weight:600
+}
+
+@media (max-width: 700px) {
+    section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 20px;
+    }
+}

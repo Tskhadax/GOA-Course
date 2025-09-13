@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(16, 16, 16), black);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div {
+    background-color: #0e0;
+    max-width: max-content;
+    padding:10px
+}
+img {
+    width:100px
+}

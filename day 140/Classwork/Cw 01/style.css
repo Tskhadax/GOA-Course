@@ -1,0 +1,20 @@
+img {
+    width: 100px
+}
+
+.div-01 {
+    display: flex;
+    gap: 20px;
+} 
+
+.div-02 {
+    background: black;
+    width: 220px;
+    height: 50px
+}
+
+.main {
+    display:flex;
+    align-items: center;
+    flex-direction:column
+}

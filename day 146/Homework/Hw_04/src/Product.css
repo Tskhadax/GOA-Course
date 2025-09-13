@@ -1,0 +1,21 @@
+.product {
+    width:200px;
+    background-color: rgb(30, 30, 30);
+    backdrop-filter: blur(30px);
+    overflow: hidden;
+    border-radius:5px
+}
+
+.product img {
+    width:100%;
+    height:150px;
+    object-fit: cover;
+}
+
+.product h1 {
+    font-size:2.2rem
+}
+
+.product h3 {
+    font-size:1rem
+}

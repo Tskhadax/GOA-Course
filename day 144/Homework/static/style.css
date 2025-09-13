@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(20, 20, 20), rgb(3, 3, 3));
+    height: 100vh;
+    overflow: hidden
+}
+
+/* header things */
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    padding: 20px 50px
+}
+
+/*      header logo */
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 1.8rem
+}
+
+header .logo i {
+    font-size: 2rem
+}
+
+/*      header icons */
+header .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    min-width: max-content;
+    gap: 20px;
+}
+
+header .icons button {
+    padding: 5px 10px;
+    font-family: "Lato", sans-serif;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    color: #0c0;
+    letter-spacing: 1px;
+    /* text-shadow: 0px 0px 10px #0a0; */
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 400;
+    transition: 0.5s
+}
+
+header .icons button:hover {
+    color: rgb(0, 255, 0);
+    /* transform: translateY(3px); */
+    /* background-color: #0f0; */
+    /* text-shadow: 0px 0px 10px rgb(0, 255, 0); */
+}
+
+header .icons img {
+    width: 70px;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+header .icons img:hover {
+    transform: translateY(3px);
+}
+
+header .icons i {
+    color: rgb(255, 242, 0);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+header .icons i:hover {
+    color: yellow;
+    transform: translateY(3px);
+    text-shadow: 0px 0px 10px;
+}
+
+header #menu {
+    display: none;
+    color: white;
+    font-size: 2rem
+}
+
+/* start main */
+main {
+    height: 80%;
+    padding: 20px
+}
+
+/* main   -   hero section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 40px
+}
+
+.hero h1 {
+    overflow: hidden;
+    border-right: 3px solid rgb(255, 255, 255);
+    padding-right: 5px;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    animation: typing 5s steps(10, end), blink-caret 1s step-end infinite;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 3rem
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 12ch
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(255, 255, 255);
+    }
+}
+
+.btn button:nth-child(1) {
+    --transform-type: -300px;
+}
+
+.btn button:nth-child(2) {
+    --transform-type: 300px;
+}
+
+.btn button {
+    opacity: 0;
+    transform: translateY(var(--transform-type));
+    animation: transformBtn 3s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes transformBtn {
+    from {
+        transform: translateY(var(--transform-type));
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero h1 span {
+    color: #0c0;
+    transform: 0.6s;
+}
+
+.hero h1 span:hover {
+    color: rgb(0, 255, 0)
+}
+
+.hero .btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.hero .btn button {
+    border: 1px solid #0c0;
+    background: none;
+    color: #0c0;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    transition: 0.3s;
+}
+
+.hero .btn button:hover {
+    color: rgb(0, 255, 0);
+    border: 1px solid rgb(0, 255, 0);
+    box-shadow:
+        0px 0px 10px rgb(0, 255, 0),
+        0px 0px 30px rgba(0, 255, 0, 0.7);
+}
+
+
+@media (max-width:850px) {
+    header #menu {
+        display: flex;
+        cursor: pointer;
+        transition: 0.2s
+    }
+
+    header #menu:active {
+        transform:rotate(90deg)
+    } 
+    
+    header .icons {
+        position: absolute;
+        right: 0px;
+        top: 100px;
+        flex-direction: column-reverse;
+        gap: 40px;
+        background-color: rgb(20, 20, 20);
+        padding: 30px;
+        min-width: 200px;
+        transform: translateX(500px);
+        transform: 0.5s;
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem
+    }
+
+    .hero h1 {
+        font-size: 2.5rem
+    }
+}

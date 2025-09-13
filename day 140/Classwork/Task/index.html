@@ -1,0 +1,36 @@
+<!-- შემოიტანეთ React და React-dom თქვენს HTML ფაილში CDN ის საშუალებით(ორიცე 16.0 ვერსიის). -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script crossorigin src="https://unpkg.com/react@16.0/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16.0/umd/react-dom.development.js"></script>
+    <!-- ამ ორი სკრიპტის დაწერით ვაიმპორტებთ რეაქთის მოდულებს -->
+</head>
+
+<body>
+    <div id="root"></div>
+
+
+    <!-- cdn - დამაკავშირებელი ფაილი თუ რაცხა -->
+    <script>
+        const react = React.createElement // რეაქთში ვქმნით ელემენტს. ()-ში ჯერ გადავცემთ რისი დამატებაც გვინდა, მძიმის შემდეგ ატრიბუტს. და კიდევ მძიმის შემდეგ კონტენტს/რა უნდა იყოს მისი შვილი.
+
+        console.log(ReactDOM)
+        ReactDOM.render(
+            React.createElement('h1', {className:"test"}, 
+                React.createElement('img', {src:'https://yt3.googleusercontent.com/yaO29uydEx0PfxuToT7uh_fP1cZGw-mcNrNZcCKTjDBTNvzn_5_gclYVAhBn5XFa-JgMKm6WwUY=s900-c-k-c0x00ffffff-no-rj'}), 
+                React.createElement('p', null, 'Hello Goa')), 
+            document.querySelector('#root')
+        )
+
+        // ReactDOM-ის ერთ-ერთ მეთოდს ვწვდებით render()-ს, ჯერ გადავცემთ ელემენტის შესახებ ინფორმაციას, და მეორე არგუმენტად სად უნდა ჩემატოს
+    </script>
+</body>
+
+</html>

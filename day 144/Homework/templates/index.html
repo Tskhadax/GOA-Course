@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b2005d7310.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-briefcase"></i>
+            <h1>JoW</h1>
+        </div>
+        <div class="icons">
+            <button>Log in</button>
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="">
+            <!-- <i class="fa-solid fa-sun"></i> -->
+        </div>
+        <i class="fa-solid fa-bars" id="menu"></i>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Start a <span>job</span> <br>or <br>find a <span>worker</span></h1>
+            <div class="btn">
+                <button>Start a job</button>
+                <a href="{{url_for('find_a_worker_page')}}"><button>Find a worker</button></a>
+            </div>
+        </section>
+    </main>
+    <script src="../static/index.js"></script>
+</body>
+
+</html>

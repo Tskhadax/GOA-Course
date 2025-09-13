@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script crossorigin src="https://unpkg.com/react@16.0/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16.0/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <!-- შექმენით თქვენი საყვარელი ფილმების სია. დაუარეთ ამ სიის თითოეულ წევრს და მათგან შექმენით ReactElement(li), გაუწერეთ კლასს ატრიბუტი და გასტილეთ. -->
+
+    <script>
+        ReactDOM.render(
+            React.createElement('ol', { className: 'main-list' },
+                React.createElement('li', { className: 'list' }, 'ბაში-აჩუკი'),
+                React.createElement('li', { className: 'list' }, 'მხიარული რომანი'),
+                React.createElement('li', { className: 'list' }, 'ჰობიტი'),
+                React.createElement('li', { className: 'list' }, 'სპაიდერვიკის ქრონიკები'),
+                React.createElement('li', { className: 'list' }, 'ბეჭდების მბრძანებელი'),
+                React.createElement('li', { className: 'list' }, 'ჰარი პოტერი'),
+                React.createElement('li', { className: 'list' }, 'ა.შ'),
+            ),
+            document.querySelector('body')
+        )
+    </script>
+</body>
+
+</html>

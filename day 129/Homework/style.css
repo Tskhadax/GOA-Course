@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    color: white
+}
+
+:root {
+    --bodyBg: hsl(218, 44%, 5%);
+    --cardBg: hsl(222, 40%, 8%);
+    --cardBg2: hsl(222, 42%, 14%);
+    --cardBg3: hsl(222, 42%, 20%);
+    --radius: 20px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bodyBg);
+    gap: 20px;
+}
+
+header {
+    width: 96%;
+    /* border:1px solid blue; */
+    margin-top: 20px;
+    display: flex;
+    padding: 20px 35px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--radius);
+    background-color: var(--cardBg);
+    /* box-shadow:0px 0px 2px */
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+}
+
+header h3 {
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 3px;
+}
+
+header h3 span {
+    color: rgb(0, 136, 174)
+}
+
+/* #search */
+#search {
+    width: 80%;
+    min-width: 280px;
+    max-width: 500px;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-around;
+    align-items: start;
+    gap:20px
+}
+
+#search input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background-color: var(--cardBg2);
+    border-radius: 10px;
+    border: 2px solid var(--cardBg3)
+}
+
+#search button {
+    padding: 7px 15px;
+    font-size: 1.2rem;
+    background-color: var(--cardBg2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid var(--cardBg3)
+}
+
+#search button:hover {
+    background-color: rgb(0, 136, 174)
+}
+
+
+/* #user */
+#user {
+    display: flex;
+    align-items: end;
+    gap: 3px
+}
+
+/* section */
+section {
+    background-color: var(--cardBg);
+    transition: 0.5s;
+}
+
+/* section:hover {
+    background-color: rgb(21, 21, 65);
+} */
+
+main {
+    width: 96%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px
+}
+
+article {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    /* flex-wrap: wrap; */
+    height: max-content
+}
+
+/* result */
+#result {
+    display: flex;
+    padding: 35px;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 45%;
+    /* max-width: 500px; */
+    min-width: 200px
+}
+
+#result h3 {
+    font-size: 2rem
+}
+
+#result h4 {
+    font-size: 1rem
+}
+
+#result h1 {
+    font-size: 3rem
+}
+
+#result h5 {
+    font-size: 0.9rem
+}
+
+/* detal */
+#detal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 35px;
+    border-radius: var(--radius);
+    height: 100%
+}
+
+#detal h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.5s
+}
+
+/* 
+#detal h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 136, 174);
+    transition: width 0.3s ease-in-out;
+} */
+
+#detal:hover h1 {
+    color: rgb(0, 136, 174)
+}
+
+#detal:hover h1::after {
+    width: 120px;
+}
+
+#detal nav {
+    min-width: 100px;
+    max-width: 300px;
+    /* width: 50%; */
+}
+
+.getInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    gap: 25px;
+}
+
+.getInfo li {
+    cursor: pointer
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    overflow: auto;
+}
+
+.information ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 1.4;
+    gap: 8px;
+    /* padding:10px 15px */
+}
+
+.information ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 3px solid rgb(0, 136, 174);
+    border-radius: 5px;
+    transition: 0.5s
+}
+
+.information ul li:hover {
+    background-color: rgb(29, 29, 68);
+}
+
+.getInfo {
+    margin-bottom: 20px
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+
+.sugested {
+    width: 100%;
+    border-radius: var(--radius);
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: min-content;
+    /* min-height:48% */
+}
+
+.sugested h3 {
+    font-size: 1.4rem
+}
+
+.divs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--cardBg2);
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+    transition: 0.5s;
+    border: 2px solid var(--cardBg3);
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.09);
+    background-color: var(--cardBg3);
+}
+
+.card-conteiner {
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.fa-magnifying-glass {
+    font-size: 1.5rem;
+    display: none
+}
+.blur {
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.406);
+    position:absolute;
+    backdrop-filter: blur(6px); 
+    transition:0.9s;
+    z-index:-1;
+    justify-content: center;
+    align-items: center;
+    display:none
+}
+
+#search2 {
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+#search2 input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background-color: var(--cardBg2);
+    border-radius: 10px;
+    border: 2px solid var(--cardBg3)
+}
+
+#search2 button {
+    padding: 7px 15px;
+    font-size: 1.2rem;
+    background-color: var(--cardBg2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid var(--cardBg3)
+}
+
+.cont {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:10px
+}
+#search2 button:hover {
+    background-color: rgb(0, 136, 174)
+}
+
+@media (max-width: 840px) {
+    article {
+        flex-direction: column;
+    }
+
+    #result {
+        width: 100%
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    ul li {
+        text-align: center;
+    }
+
+
+ 
+
+    /* .fa-magnifying-glass {
+        display: flex;
+        cursor:pointer;
+        z-index:3
+    } */
+    header h3 {
+        display:none
+    }
+    header {
+        justify-content: center;
+    }
+}

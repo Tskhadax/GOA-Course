@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16.0/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16.0/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <!-- შექმენით React ელემენტი(h1) createElement მეთოდის გამოყენებით. ახსენით რას აკეთებს იგი და კომენტარის სახით ჩამოწერეთ მისი პარამეტრები. -->
+
+    <script>
+        ReactDOM.remder(
+            React.createElement('h1', null, 'Hello World'),
+            document.querySelector('body')
+        )
+
+        // ReactDOM -ს აქვს მეთოდი remder. remder-ს გადავცემთ საიტზე რისი დამატებაც გვინდა და სად. React.createElement('h1', null, 'Hello World') ნიშნავს რომ რეაქთის ფაილში შეიქმნას ელემენტი სახელად h1. პირველ არგუმენტად სწორედ მაგას გადავცემთ. null ამ შემთხვევაში ატრიბუტი არ აქვს. ზოგადად მეორე არგუმენტად გადაეცემა ატრიბუტის სახელი. და მესამე არგუმენტია შიგთავსი რაც გვინდა რომ იყოს, ამ შემთხვევაში 'Hello World'
+    </script>
+</body>
+
+</html>

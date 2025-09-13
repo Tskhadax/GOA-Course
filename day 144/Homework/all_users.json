@@ -1,0 +1,122 @@
+[
+    {
+        "Name": "Ana",
+        "Surname": "Puturidze",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.freepik.com/512/6833/6833605.png",
+        "ProfileBg": "https://i.pinimg.com/1200x/d8/3a/2f/d83a2f4102b07ea5ccb1b626371180e3.jpg",
+        "Gender": "F",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/Anna10PA",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Davit",
+        "Surname": "Shavidze",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.flaticon.com/512/4042/4042356.png",
+        "ProfileBg": "https://i.pinimg.com/736x/5c/7e/06/5c7e06027002c3a5ebae574da1845a90.jpg",
+        "Gender": "M",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/davitshavidze",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Gabrieli",
+        "Surname": "Molodini",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.flaticon.com/512/4042/4042356.png",
+        "ProfileBg": "https://i.pinimg.com/736x/5c/7e/06/5c7e06027002c3a5ebae574da1845a90.jpg",
+        "Gender": "M",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/gabrieli12",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Alexsandre",
+        "Surname": "Dzukaevi",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.flaticon.com/512/4042/4042356.png",
+        "ProfileBg": "https://i.pinimg.com/736x/5c/7e/06/5c7e06027002c3a5ebae574da1845a90.jpg",
+        "Gender": "M",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/Diana044",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Lika",
+        "Surname": "Chxikvadze",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.freepik.com/512/6833/6833605.png",
+        "ProfileBg": "https://i.pinimg.com/1200x/d8/3a/2f/d83a2f4102b07ea5ccb1b626371180e3.jpg",
+        "Gender": "F",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/l1kaa",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Gabriel",
+        "Surname": "Nadiradze",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.flaticon.com/512/4042/4042356.png",
+        "ProfileBg": "https://i.pinimg.com/736x/5c/7e/06/5c7e06027002c3a5ebae574da1845a90.jpg",
+        "Gender": "M",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/nadiradzegabrieli",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Nikoloz",
+        "Surname": "Tefnadze",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.flaticon.com/512/4042/4042356.png",
+        "ProfileBg": "https://i.pinimg.com/736x/5c/7e/06/5c7e06027002c3a5ebae574da1845a90.jpg",
+        "Gender": "M",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/n1ka1-4",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Luka",
+        "Surname": "Suarashvili",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.flaticon.com/512/4042/4042356.png",
+        "ProfileBg": "https://i.pinimg.com/736x/5c/7e/06/5c7e06027002c3a5ebae574da1845a90.jpg",
+        "Gender": "M",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/lukasuarishvili",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Goga",
+        "Surname": "Asatiani",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.flaticon.com/512/4042/4042356.png",
+        "ProfileBg": "https://i.pinimg.com/736x/5c/7e/06/5c7e06027002c3a5ebae574da1845a90.jpg",
+        "Gender": "M",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/gogaasatiani",
+        "Twitter": "https://x.com/home"
+    },
+    {
+        "Name": "Andria",
+        "Surname": "Shengelia",
+        "Job": "Developer",
+        "Profile": "https://cdn-icons-png.flaticon.com/512/4042/4042356.png",
+        "ProfileBg": "https://i.pinimg.com/736x/5c/7e/06/5c7e06027002c3a5ebae574da1845a90.jpg",
+        "Gender": "M",
+        "Price": "$2 000",
+        "Facebook": "https://www.facebook.com/",
+        "GitHub": "https://github.com/andriashengeli",
+        "Twitter": "https://x.com/home"
+    }
+]

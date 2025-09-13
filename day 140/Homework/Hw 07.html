@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16.0/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16.0/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <!-- დაარენდერეთ 5 ნაბიჯზე შექმნილი React ელემენტების სია ახლად შექმნილ ul ტეგში. -->
+    <script>
+        ReactDOM.render(
+            React.createElement('ol', { className: 'main-list' },
+                React.createElement('li', null, 'List 01'),
+                React.createElement('li', null, 'List 02'),
+                React.createElement('li', null, 'List 03'),
+                React.createElement('li', null, 'List 04'),
+                React.createElement('li', null, 'List 05'),
+            ),
+            document.querySelector('body')
+        )
+    </script>
+</body>
+
+</html>
